@@ -1,0 +1,749 @@
+* {
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-rows: repeat(4, 1fr);
+  height: 100vh;
+  margin: 0;
+
+}
+
+.menu {
+  grid-column: span 1;
+  grid-row: span 4;
+  display: grid;  
+  background: #635545;
+  flex-direction: column; 
+  justify-content: center; 
+}
+
+.menu ul {
+  list-style-type: none;
+  flex-direction: column; /* Arrange items vertically */
+}
+
+.menu li {
+  margin: 4px ; /* Adjust spacing between menu items */
+  border: 3px solid black;
+  text-align: center; /* Center the text within the list item */ 
+  padding: 10px; 
+  width: 285px;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  font-weight: bold;
+}
+
+.menu a {
+  text-decoration: none;
+  color: whitesmoke;
+  text-align: center; /* Center the text */
+  font-display: monospace;
+  font-size: 20px;
+  display: block;
+}
+
+.menu li:hover {
+  background-color: whitesmoke;
+}
+
+.menu li:hover a {
+  color: firebrick;
+}
+
+.html-button-menu li{
+  margin: 4px ; /* Adjust spacing between menu items */
+  border: 3px solid black; 
+  padding: 5px; 
+  width: 150px;
+  float: left;
+  display: inline;
+  font-weight: bold;
+  background-color: #666666;
+
+}
+
+.html-button-menu ul{
+ list-style-type: none;
+
+}
+
+.html-button-menu a {
+  text-decoration: none;
+  color: whitesmoke;
+  text-align: center; /* Center the text */
+  font-display: monospace;
+  font-size: 20px;
+  display: block;
+}
+
+.html-button-menu li:hover {
+  background-color: #4ab4de;
+}
+
+.html-button-menu li:hover a {
+  color: black;
+}
+
+.header {
+  grid-column: 2 / span 4;
+  background: #635545;
+}
+
+.header-home {
+  color: whitesmoke;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.home-start {
+  text-align: center;
+  color: red;
+  font-size: 50px;
+  font-family: fantasy;
+  font-weight: lighter;
+}
+.home-end {
+  text-align: justify;
+  font-size: 28px;
+  font-family: arial;
+}
+
+
+/* HTML CSS STARTS HERE */
+
+.content {
+  grid-area: 2 / 2 / span 4 / span 4;
+  background: darkgray; 
+  border: 10px solid black; /* Inner border color and thickness */
+  position: relative;
+  overflow-y: scroll;
+}
+
+.content-overview, .content-structure, .content-elements {
+  font-size: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.content-overview p, .content-structure p, .content-elements p, .content-attributes p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.overview-head,.structure-head,.elements-head,.attributes-head {
+  text-align: center;
+  color: red;
+  font-size: 50px;
+  font-family: fantasy;
+  font-weight: lighter;
+  margin: 0px;
+}
+
+.overview-c1, .overview-c4, .structure-c1, .structure-c4, .structure-c7, .structure-c11,
+.structure-c13, .elements-c1, {
+  font-weight: bold;
+}
+
+.overview-c2, .overview-c3, .structure-c2, .structure-c3, .structure-c5, .structure-c6,
+.structure-c8, .structure-c9, .structure-c10, .structure-c12, .structure-c13, .structure-c14,
+.structure-c15, .elements-c2 {
+  font-size: 20px; 
+  padding-left: 15px;
+}
+
+.overview-c5, .overview-c9, .overview-c14, .overview-c17 {
+  font-weight: bold; 
+  padding-left: 15px;
+}
+
+.overview-c6, .overview-c7, .overview-c8, .overview-c10, .overview-c11, .overview-c12, 
+.overview-c15, .overview-c16, .overview-c18, .overview-c19, .overview-c20, .overview-c21 {
+  padding-left: 25px; 
+  font-size: 20px;
+}
+
+.overview-c13 {
+  font-weight: bold; 
+  margin-top: 30px;
+}
+
+.structure-example {
+  height: auto;
+  width: 600px;
+  margin: 50px auto;
+  border-radius: 20px;
+  border-left: 4px solid #04AA6D;
+  background-color: #FFF;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.structure-example1, .structure-example2, .structure-example3, .structure-example4,
+.structure-example5, .structure-example6, .structure-example7, .structure-example8,
+.structure-example9, .structure-example10, .structure-example4-text, 
+.structure-example7-text, .structure-example8-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.structure-example1 {
+  color: gray;
+}
+
+.structure-example2, .structure-example3, .structure-example4, .structure-example5,
+.structure-example6, .structure-example7, .structure-example8, .structure-example9, 
+.structure-example10 {
+  color: red;
+}
+
+.content-overview, .content-structure, .content-elements, .content-attributes {
+  font-family: Verdana,sans-serif;
+}
+
+.elements-table, .elements-table td, .elements-table th {
+  display: table-cell;
+  padding: 8px 8px;
+  text-align: left;
+  vertical-align: top;
+  border: 3px solid black;
+}
+
+.elements-table {
+  background-color: #FFF;
+}
+.elements-c8, .elements-c10 {
+  background-color: #E7E9EB;
+}
+
+.elements-c7, .elements-c9 {
+  background-color: gray;
+}
+
+/* 30 TYPES OF HTML ELEMENTS STARTS HERE */
+
+.elements-c11, .elements-c13, .elements-c15, .elements-c17, .elements-c19,
+.elements-c21, .elements-c22, .elements-c24, .elements-c25, .elements-c27,
+.elements-c29, .elements-c31, .elements-c32, .elements-c34, .elements-c35,
+.elements-c37, .elements-c39, .elements-c40, .elements-c42, .elements-c43,
+.elements-c45, .elements-c46, .elements-c48, .elements-c49, .elements-c51,
+.elements-c52, .elements-c54, .elements-c55, .elements-c57, .elements-c58,
+.elements-c60, .elements-c61, .elements-c63, .elements-c64, .elements-c66,
+.elements-c67, .elements-c69, .elements-c70, .elements-c72, .elements-c73,
+.elements-c75, .elements-c76, .elements-c78, .elements-c79, .elements-c81,
+.elements-c82, .elements-c84, .elements-c85, .elements-c87, .elements-c88,
+.elements-c90, .elements-c91, .elements-c93, .elements-c94, .elements-c96 {
+  font-weight: bold;
+}
+
+.elements-c12, .elements-c14, .elements-c16, .elements-c18, .elements-c20, .elements-c23
+, .elements-c26, .elements-c30, .elements-c33, .elements-c36, .elements-c38, .elements-c41,
+.elements-c62, .elements-c65, .elements-c68, .elements-c71, .elements-c74, .elements-c77, 
+.elements-c80, .elements-c83, .elements-c86, .elements-c89, .elements-c92, .elements-c95 {
+  text-align: justify;
+  font-size: 20px; 
+  padding-left: 15px;
+}
+
+.five-example, .h1-to-h6, .elements-p, .elements-br, .elements-b, .elements-div {
+  height: auto;
+  width: 80%;
+  margin: 20px auto;
+  border-left: 4px solid #04AA6D;
+  background-color: #FFF;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.five-example1 {
+  color: gray;
+}
+
+.five-example2, .five-example3, .five-example4, .fivere-example5,
+.five-example6, .five-example7, .five-example8, .five-example9, 
+.five-example10 {
+  color: red;
+}
+
+.elements-h1-example, .elements-h2-example, .elements-h3-example, .elements-h4-example,
+.elements-h5-example, .elements-h6-example {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.elements-doctype, .elements-html, .elements-head-example, .elements-title, .elements-body {
+  height: auto;
+  width: auto;
+  padding: 8px 8px;
+  border-left: 4px solid #04AA6D;
+  background-color: #FFF;
+  margin: 20px auto;
+}
+
+.h1-to-h6-example, .elements-p-example, .elements-br-example, .elements-b-example,
+.elements-a-example, .elements-img-example,.elements-ul, .elements-ol, .elements-ul-example, .elements-ol-example, 
+.elements-li, .elements-li-example, .elements-span, .elements-span-example, .elements-input, .elements-input-example,
+.elements-select, .elements-select-example, .elements-button, .elements-button-example, .elements-strong, .elements-strong-example,
+.elements-em, .elements-em-example, .elements-hr, .elements-hr-example, .elements-table-example, .elements-tr-example, .elements-th-example,
+.elements-td-example, .elements-blockquote-example, .elements-cite-example, .elements-abbr-example, .elements-blockquote,
+.elements-cite, .elements-abbr, .elements-details, .elements-details-example {
+  margin: 20px auto; 
+  height: auto;
+  width: 80%;
+  border-left: 4px solid #04AA6D;
+  background-color: #FFF;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* 30 TYPES OF HTML ELEMENTS ENDS */
+
+/* ATTRIBUTES STARTS HERE */
+.content-attribute {
+  font-size: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.attribute-c1, .attribute-c7, .attribute-c9, .attribute-c10, .attribute-c12
+, .attribute-c13, .attribute-c15, .attribute-c19
+, .attribute-c21, .attribute-c22, .attribute-c24, .attribute-c25, .attribute-c27
+, .attribute-c28, .attribute-c30, .attribute-c31, .attribute-c33, .attribute-c34
+, .attribute-c36 {
+  font-weight: bold;
+}
+
+.content-attribute p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.attribute-c2, .attribute-c3, .attribute-c4, .attribute-c5, .attribute-c6, .attribute-c8
+, .attribute-c11, .attribute-c14, .attribute-c17, .attribute-c20, .attribute-c23, .attribute-c26
+, .attribute-c29, .attribute-c32, .attribute-c35{
+  text-align: justify;
+  font-size: 20px; 
+  padding-left: 15px;
+}
+
+.attribute-src,.attribute-href, .attribute-alt, .attribute-width-height,
+.attribute-class, .attribute-id, .attribute-style, .attribute-placeholder,
+.attribute-disabled, .attribute-checked {
+  margin: 20px auto; 
+  height: auto;
+  width: 80%;
+  border-left: 4px solid #04AA6D;
+  background-color: #FFF;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* ATTRIBUTES ENDS HERE */
+
+/* HTML CSS ENDS HERE */
+
+.logo {
+  display: grid;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: self-start; /* Align to the top of the container */
+}
+
+.logo img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid black;
+  object-fit: content;
+  padding: 1px;
+}
+
+/* CSS PAGE START HERE */
+.css-button-menu li{
+  margin: 4px ; /* Adjust spacing between menu items */
+  border: 3px solid black; 
+  padding: 5px; 
+  width: 150px;
+  float: left;
+  display: inline;
+  font-weight: bold;
+  background-color: #666666;
+
+}
+
+.css-button-menu ul{
+ list-style-type: none;
+
+}
+
+.css-button-menu a {
+  text-decoration: none;
+  color: whitesmoke;
+  text-align: center; /* Center the text */
+  font-display: monospace;
+  font-size: 20px;
+  display: block;
+}
+
+.css-button-menu li:hover {
+  background-color: #4ab4de;
+}
+
+.css-button-menu li:hover a {
+  color: black;
+}
+.overview-b1,.overview-b2,.overview-b3,.overview-b4,.overview-b5,
+.overview-b6,.overview-b7,.overview-b8,.overview-b9,.overview-b10 {
+  font-weight: normal;
+  padding-left: 15px;
+  justify-content: justify;
+}
+
+.structure1-example0,.structure1-example1, .structure1-example2, .structure1-example3, 
+.structure1-example4, .structure1-example5, .structure1-example6 {
+  grid-area: 2 / 2 / span 4 / span 4;
+  background: lightslategrey;
+  border: 2px solid black; /* Inner border color and thickness */
+  position: relative;
+  font-family: monospace;
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+.css-overview-head,.structures1-head,.elements1-head,.attributes1-head {
+  text-align: center;
+  color: red;
+  font-size: 50px;
+  font-family: fantasy;
+  font-weight: lighter;
+  margin: 0px;
+
+}
+
+.structure-s1,.structure-s2,.structure-s3,.structure-s4  {
+  padding-left: 15px;
+  justify-content: justify;
+  font-size: 24px;
+  font-family: arial;
+  
+}
+#myId {
+  background-color: lightcoral;
+  color: whitesmoke;
+  padding: 40px;
+  text-align: center;
+  font-size: 50px;
+  font-family: sans-serif;
+}
+
+.people{
+  background-color: gray;
+  border-style: dashed; 
+  border-color: sandybrown;
+  padding: 4px;
+  text-align: center;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.elementselector
+  h2, i{
+  background-color: gray;
+  padding:4px;
+  margin: 0px;
+  color: whitesmoke;
+  font-family: cursive;
+}
+
+.elements-s0, .elements-s1, .elements-s2, .elements-s3, .elements-s4, .elements-s5,
+.elements-s6, .elements-s7, .elements-s8, .elements-s9, .elements-s10, .elements-s11,
+.elements-s012, .element-s013, .elements-s14, .elements-s15, .elements-s16, .elements-s17,
+.elements-s18, .elements-s19, .elements-s20, .elements-s21, .elements-s22, .elements-s23,
+.elements-s24, .elements-s25, .elements-s26, .elements-s27, .elements-s28, .elements-s29,
+.elements-s30, .elements-s31, .elements-s32, .elements-s33, .elements-s34, .elements-s35,
+.elements-s36, .elements-s37, .elements-s38, .elements-s39, .elements-s40, .elements-s41,
+.elements-s42,.elements-s43,.elements-s44,.elements-s45,.elements-s46,.elements-s47,
+.elements-s48,.elements-s49,.elements-s50,.elements-s51,.elements-s52,.elements-s53 {
+  padding-left: 15px;
+  justify-content: justify;
+  font-size: 24px;
+  font-weight: lighter;
+  font-family: cursive;
+}
+
+.img {  float: right ;
+  border-style: solid;
+  margin: 20px;
+  padding: 10px;
+}
+
+.box-sizing{
+  width: 300px;
+  height: 100px;
+  padding: 50px;
+  border: 10px solid red;
+}
+
+.bg-color{
+  background-color: gray;
+}
+
+.opacity-img{
+  opacity: 1.0;
+}
+.opacity-img:hover {
+
+  opacity: 0.5;
+}
+
+.text-color {
+  color: blue;
+  text-align: center;
+  font-size: 30px;
+  border-style: dashed;
+}
+
+.member001,.member002,.member003{
+  margin: 0px;
+  padding: 1px;
+  border-style: ridge;
+  text-align: center;
+}
+.member001{
+  font-family: cursive;
+  font-size: 18px;
+  
+}
+.member002{
+  font-family: monospace;
+  font-size: 18px;
+  
+}
+.member003{
+  font-family: sans-serif ;
+  font-size: 18px;
+}
+
+.scroll-bars{
+  background-color: lightseagreen;
+  border: 10px solid black;
+  max-width: 600px;
+  max-height: 200px;
+  font-display: cursive;
+  font-size: 24px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.css-border-r{
+  border: 3px solid;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.height-width-def{
+  height: 175px;
+  width: 500px;
+  background-color: lightslategrey;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+.outside-border{
+  outline-style: solid;
+  outline-color: moccasin;
+  font-family: fantasy;
+  font-size: 30px;
+}
+
+.outline-width-def{
+  outline-style: dashed;
+  outline-color: sandybrown;
+  outline-width: 10px;
+  font-family: fantasy;
+  font-size: 30px;
+}
+
+.outline-color-def{
+  outline-style: double;
+  outline-color: darkorchid;
+  outline-width: 10px;
+  font-family: fantasy;
+  font-size: 30px;
+}
+
+.outline-offset-def{
+  border: 3px solid;
+  outline-style: dashed;
+  outline-color: darkorchid;
+  outline-offset: 15px;
+  outline-width: 5px;
+  font-family: fantasy;
+  font-size: 30px;
+}
+
+.text-align-1{
+  color: darkmagenta;
+  text-align: left;
+  border:  5px solid black;
+}
+.text-align-2{
+  color: darkmagenta;
+  text-align: center;
+  border: 5px solid black;
+}
+.text-align-3{
+  color: darkmagenta;
+  text-align: right;
+  border: 5px solid black;
+
+}
+
+.text-transform1{
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: bold;
+  border: 7px solid powderblue;
+}
+.text-transform2{
+  text-transform: lowercase;
+  font-size: 25px;
+  font-weight: bold;
+  border: 7px solid powderblue;
+}
+.text-transform3{
+  text-transform: capitalize;
+  font-size: 35px;
+  font-weight: bold;
+  border: 7px solid powderblue;
+}
+
+.attributes-1, .attributes-2, .attributes-3, .attributes-4, .attributes-5,
+.attributes-6, .attributes-7, .attributes-8, .attributes-9, .attributes-10,
+.attributes-11, .attributes-12, .attributes-13, .attributes-14, .attributes-15,
+.attributes-16, .attributes-17, .attributes-18, .attributes-19, .attributes-20{
+  padding-left: 15px;
+  justify-content: justify;
+  font-size: 24px;
+  font-weight: lighter;
+  font-family: cursive;
+}
+
+.class-example{
+  font-family: cursive;
+  font-size: 24px;
+  color: whitesmoke;
+  background-color: lightslategrey;
+  border: 4px solid black;
+  text-align: center;
+}
+
+#Myid{
+  font-family: sans-serif;
+  font-size: 24px;
+  margin: 0px;
+  padding: 5px;
+  border: 10px groove sandybrown;
+}
+
+.img-edit{
+  background-image: url("soft sky.png");
+  height: 200px;
+  width: 400px;
+  padding: 20px;
+  margin: 0px;
+  text-align: center;
+  font-size: 24px;
+  font-family: monospace;
+  font-weight: bold;
+  border: 5px solid black;
+}
+/* CSS PAGE ENDS HERE */
+
+/* GROUP MEMBERS PAGE START HERE */
+
+.grp-button-menu li{
+  margin: 4px ; /* Adjust spacing between menu items */
+  border: 3px solid black; 
+  padding: 5px; 
+  width: 150px;
+  float: left;
+  display: inline;
+  font-weight: bold;
+  background-color: #666666;
+
+}
+
+.grp-button-menu ul{
+ list-style-type: none;
+
+}
+
+.grp-button-menu a {
+  text-decoration: none;
+  color: whitesmoke;
+  text-align: center; /* Center the text */
+  font-display: monospace;
+  font-size: 20px;
+  display: block;
+}
+
+.grp-button-menu li:hover {
+  background-color: #4ab4de;
+}
+
+.grp-button-menu li:hover a {
+  color: black;
+}
+
+.picture-1 img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid black;
+  object-fit: content;
+  padding: 1px;
+  
+}
+.mark,.john,.fed{
+  padding: 5px;
+  margin: 5px;
+  border: 3px solid black;
+  font-size: 25px;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: whitesmoke;
+  padding-bottom: 10px;
+
+}
+
+.naming,.section,.city{
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  line-height: normal;
+}
+
+.overall-content{
+  grid-area: 2 / 2 / span 4 / span 4;
+  background: darkgray;
+  border: 10px solid black; /* Inner border color and thickness */
+  position: relative;
+  overflow-y: scroll;
+  outline-offset: 20px;
+}
